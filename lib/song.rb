@@ -8,7 +8,7 @@ class Song
   include Memorable::InstanceMethods
   include Paramable
 
-#  @@songs = []
+  @@songs = []
 
   def self.find_by_name(name)
     @@songs.detect{|a| a.name == name}
